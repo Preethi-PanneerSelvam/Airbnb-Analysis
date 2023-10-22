@@ -24,7 +24,7 @@ with st.sidebar:
                           )
     
 # creating connection with mongodb atlas and retreving the data
-client = pymongo.MongoClient("mongodb+srv://preethi7:preethi07@cluster0.3jt6zku.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("Your mongodb connection link")
 db = client.sample_airbnb
 col = db.listingsAndReviews
 #reading the cleaned dataframe
